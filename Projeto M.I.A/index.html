@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="icon" href="VideosFts/Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/index.js"></script>
+    
+    <title>M. I. A.</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="VideosFts/Logo1.png" alt="Logo da MIA, empresa de segurança inteligente">
+                <span class="logo-name">M. I. A.</span>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#quem-somos">Sobre Nós</a></li>
+                    <li><a href="#outras-areas">Serviços</a></li>
+                </ul>
+            </nav>
+            <div class="user-icon">
+                <a href="login.html">
+                    <i class="fas fa-user-circle user-photo"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="carousel">
+        <div class="carousel-slide fade">
+            <img src="VideosFts/image1.jpg" alt="Imagem ilustrativa de uma câmera de segurança em operação">
+        </div>
+        <div class="carousel-slide fade">
+            <img src="VideosFts/image2.jpeg" alt="Imagem mostrando monitoramento inteligente de segurança">
+        </div>
+        <div class="carousel-slide fade">
+            <img src="VideosFts/image3.jpg" alt="Imagem de instalação de câmeras de segurança em uma propriedade">
+        </div>
+        <div class="carousel-slide fade">
+            <img src="VideosFts/image4.png" alt="Imagem de um projeto de segurança monitorado pela MIA">
+        </div>
+    
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+   
+    <br>
+    <br>
+    <div id="quem-somos" class="sobreposição">        
+        <div class="text-before">M.I.A.</div>
+        <div class="text-after">QUEM SOMOS?</div>
+    </div>
+ <div class="elemento"></div>
+    <div class="container">
+        <div class="text-box centralize-text">
+            <h1>Paixão por Segurança.</h1>
+            <h3 class="justificado">A MIA surgiu de uma visão clara: levar a segurança além do tradicional. Observamos que a proteção de ambientes precisava evoluir, acompanhando as mudanças rápidas da sociedade. Com isso, decidimos unir nossa paixão por tecnologia com a necessidade urgente de soluções mais inteligentes e ágeis. Nosso objetivo sempre foi criar um sistema de segurança que oferecesse mais do que simples monitoramento – mas sim uma verdadeira inovação que garantisse a paz de espírito dos nossos clientes.</h3>
+        </div>
+        <div class="text-box centralize-text">
+            <h1>Tradição e Inovação em Segurança</h1>
+            <h3 class="justificado">Fundada em 1986, a MIA começou oferecendo segurança especializada para proteger pessoas e patrimônios. Com o tempo, investimos em tecnologia, como inteligência artificial e automação, para aprimorar nossos serviços. Hoje, somos referência em soluções de segurança inovadoras, sempre com o compromisso de garantir confiança e excelência, criando um futuro mais seguro para nossos clientes e colaboradores.</h3>
+    
+        </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <h1 class="texto">Fundadores</h1>
+        
+        <div class="team-photos">
+            <div class="photo">
+                <img src="VideosFts/rafa.jpeg" alt="Rafael F. F. Ferreira">
+                <p class="name">Rafael F. F. Ferreira</p>
+            </div>
+            <div class="photo">
+                <img src="VideosFts/david.jpeg" alt="David S. Félix">
+                <p class="name">David S. Felix</p>
+            </div>
+            <div class="photo">
+                <img src="VideosFts/elo.jpeg" alt="Eloisa C. Billieri">
+                <p class="name">Eloisa C. Billieri</p>
+            </div>
+        </div>
+    </div>
+    <div class="elemento2"></div>
+    <div class="chat-icon" onclick="toggleChat()">
+        <img src="VideosFts/chat.png" alt="Ícone de chat com o assistente virtual" width="75" height="75">
+    </div>
+    <div class="chat-icon" onclick="toggleChat()"></div>
+
+    <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+            Falco - Assistente Virtual
+            <span class="close-chat" onclick="toggleChat()">&#x2715;</span>
+        </div>
+        <div class="chat-content" id="chat-content">
+            <div class="bot-message">Olá! Como posso ajudar com sua segurança?</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>    
+    <h2 class="texto">Resultados Significativos Alcançados.</h2>
+    <br>
+    <div class="stats-container">
+        <div class="stats-background-rectangle">
+            <div class="stats-item">
+                <img src="VideosFts/brasil.png" alt="Mapa do Brasil com destaque para projetos da MIA">
+                <span class="plus"></span><span class="stats-number" data-target="1000">0</span>
+                <p class="white-text">Projetos implantados pelo Brasil</p>
+            </div>
+            <div class="stats-item">
+                <img src="VideosFts/camera.png" alt="Câmera de segurança instalada">
+                <span class="plus"></span><span class="stats-number" data-target="25400">0</span>
+                <p class="white-text">Câmeras instaladas</p>
+            </div>
+            <div class="stats-item">
+                <img src="VideosFts/aviso.png" alt="Aviso de incidentes detectados">
+                <span class="plus"></span><span class="stats-number" data-target="15000">0</span>
+                <p class="white-text">Incidentes detectados</p>
+            </div>
+            <div class="stats-item">
+                <img src="VideosFts/cliente.png" alt="Clientes ativos da MIA">
+                <span class="plus"></span><span class="stats-number" data-target="950">0</span>
+                <p class="white-text">Grandes clientes ativos</p>
+            </div>
+            </div>
+            </div>
+            <div class="elemento2"></div>
+
+
+        <div id= outras-areas class="new-container">
+            <h1 class="texto">Outras Áreas M.I.A.</h1>
+            <h2 class="new-subtext red-text">MONITORAMENTO INTELIGENTE E INOVAÇÕES EM SEGURANÇA</h2>
+        <h4 class="new-description red-text">A M.I.A. se destaca pela sua sede moderna, filiais pelo Brasil e uso de tecnologia avançada em monitoramento inteligente, garantindo excelência na segurança patrimonial e tranquilidade para seus clientes.</h4>
+        <div class="new-grid">
+            <div class="new-grid-item">
+                <i class="fas fa-door-open"></i>
+                <h3>Portaria Remota Inteligente</h3>
+                <h4 class="white-text">Solução de portaria remota flexível e altamente eficiente, ideal para uma ampla gama de ambientes, proporcionando segurança sem a necessidade de presença física.</h4>
+            </div>
+            <div class="new-grid-item">
+                <i class="fas fa-video"></i>
+                <h3>Monitoramento 24hs com Inteligência Artificial</h3>
+                <h4 class="white-text">Sistema integrado de monitoramento constante, utilizando IA para detectar ameaças em tempo real, aliando tecnologia de ponta e equipamentos de segurança eletrônica de última geração.</h4>
+            </div>
+            <div class="new-grid-item">
+                <i class="fas fa-camera"></i>
+                <h3>Sistemas de CFTV com Análise Inteligente</h3>
+                <h4 class="white-text">Ambientes mais seguros com câmeras de alta definição, analisando imagens de forma inteligente para detectar comportamentos suspeitos e anomalias.</h4>
+            </div>
+            <div class="new-grid-item">
+                <i class="fas fa-lock"></i>
+                <h3>Controle de Acesso Inteligente</h3>
+                <h4 class="white-text">Tecnologia de ponta para controle de acessos, com sistemas ágeis, seguros e inteligentes, garantindo um gerenciamento eficiente e imediato de qualquer entrada ou saída em seu espaço.</h4>
+            </div>
+            <div class="new-grid-item">
+                <i class="fas fa-satellite"></i>
+                <h3>V.P.I.M. (Radar de Monitoramento Perimetral)</h3>
+                <h4 class="white-text">Solução avançada de segurança com radar e cerca elétrica integrados, proporcionando um monitoramento perimetral eficaz e de alta precisão.</h4>
+            </div>
+            <div class="new-grid-item">
+                <i class="fas fa-bolt"></i>
+                <h3>P.P.I. (Cerca Elétrica de Proteção Inteligente)</h3>
+                <h4 class="white-text">Sistema de proteção perimetral com cerca elétrica inteligente, altamente eficaz em ambientes sensíveis, garantindo máxima segurança para propriedades e áreas comerciais.</h4>
+            </div>
+            <div class="new-grid-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Aplicativo MIA Secure</h3>
+                <h4 class="white-text">Aplicativo intuitivo e funcional, desenvolvido para controlar e monitorar todos os aspectos da segurança de seu ambiente em tempo real, com uma interface simples e altamente eficiente.</h4>
+            </div>
+            <div class="new-grid-item">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Outras Soluções de Segurança Avançada</h3>
+                <h4 class="white-text">Além de nossas soluções principais, a M.I.A. oferece tecnologias inovadoras para atender a qualquer necessidade de segurança, adaptando-se perfeitamente ao seu ambiente e à sua rotina.</h4>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="elemento2"></div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Endereço</h3>
+                <p><strong>São José do Rio Preto</strong><br>
+                    R. Marechal Deodoro da Fonseca, 4181<br>
+                    Vila Santa Cruz – SP, 15014-060, Brasil</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><strong>São José do Rio Preto</strong><br>
+                   +55 17 0123-4567</p>
+                <p><strong>Mirassol</strong><br>
+                    +55 17 0123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links úteis</h3>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="problema.html">Problema</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com" target="_blank"><img src="VideosFts/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="VideosFts/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="VideosFts/instagram.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="VideosFts/youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
